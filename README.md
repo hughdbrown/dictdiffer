@@ -1,4 +1,5 @@
-=== DictDiffer
+DictDiffer
+===
 Python class to take the difference of two python dictionaries:
 - stuff added
 - stuff deleted
