@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 A dictionary difference calculator
 Originally posted as:
@@ -14,7 +13,9 @@ class DictDiffer(object):
     # (4) keys same in both and unchanged values
     def __init__(self, current_dict, past_dict):
         self.current_dict, self.past_dict = current_dict, past_dict
-        self.set_current, self.set_past = set(current_dict.keys()), set(past_dict.keys())
+        self.set_current, self.set_past = [
+            set(d.keys()) for d in (current_dict, past_dict)
+        ]
         self.intersect = self.set_current.intersection(self.set_past)
 
     def added(self):
