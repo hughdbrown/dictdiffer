@@ -1,7 +1,7 @@
 DictDiffer
 ===
 Python class to take the difference of two python dictionaries:
-= what was added,
+- what was added,
 - what was removed,
 - which key-value pairs are the same, and
 - which key-value pairs are unchanged
