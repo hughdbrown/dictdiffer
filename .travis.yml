@@ -10,5 +10,5 @@ install:
 
 script:
   - pep8 --ignore=E501 src/*.py tests/*.py
-  - pylint --rcfile=pylint.rc src/*.py tests/*.py
+  - pylint --rcfile=pylint.rc src/*.py 
   - nosetests --with-coverage tests/*.py

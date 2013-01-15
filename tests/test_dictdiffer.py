@@ -9,14 +9,14 @@ class TestDictDiffer(TestCase):
         b = {'a': 1, 'b': 2, 'd': 0}
         self.d = DictDiffer(b, a)
 
-    def testAdded(self):
-        assert self.d.added() == set(['d'])
+    def test_added(self):
+        self.assertEqual(self.d.added(), set(['d']))
 
-    def testRemoved(self):
-        assert self.d.removed() == set(['c'])
+    def test_removed(self):
+        self.assertEqual(self.d.removed(), set(['c']))
 
-    def testChanged(self):
-        assert self.d.changed() == set(['b'])
+    def test_changed(self):
+        self.assertEqual(self.d.changed(), set(['b']))
 
-    def testUnchanged(self):
-        assert self.d.unchanged() == set(['a'])
+    def test_unchanged(self):
+        self.assertEqual(self.d.unchanged(), set(['a']))
