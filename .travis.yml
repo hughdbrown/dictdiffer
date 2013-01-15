@@ -1,0 +1,14 @@
+language: python
+
+python:
+    - "2.6"
+    - "2.7"
+    - "3.2"
+
+install:
+    - pip install -r requirements_test.txt
+
+script:
+  - pep8 --ignore=E501 src/*.py tests/*.py
+  - pylint --rcfile=pylint.rc src/*.py tests/*.py
+  - nosetests --with-coverage tests/*.py

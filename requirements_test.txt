@@ -1,0 +1,5 @@
+pylint
+pep8
+coverage
+nose
+
