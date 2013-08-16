@@ -1,6 +1,5 @@
 DictDiffer
 ===
-[![Build Status](https://travis-ci.org/mortbauer/fastdictdiffer.png)](https://travis-ci.org/mortbauer/fastdictdiffer)
 
 Python class to take the difference of two python dictionaries:
 - what was added,
