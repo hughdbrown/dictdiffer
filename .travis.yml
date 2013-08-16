@@ -9,6 +9,6 @@ install:
     - pip install -r requirements_test.txt
 
 script:
-  - pep8 --ignore=E501 src/*.py tests/*.py
-  - pylint --rcfile=pylint.rc src/*.py 
+  - pep8 --ignore=E501 dictdiffer/*.py tests/*.py
+  - pylint --rcfile=pylint.rc dictdiffer/*.py 
   - nosetests --with-coverage tests/*.py

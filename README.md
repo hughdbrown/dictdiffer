@@ -1,5 +1,6 @@
 DictDiffer
 ===
+
 Python class to take the difference of two python dictionaries:
 - what was added,
 - what was removed,
