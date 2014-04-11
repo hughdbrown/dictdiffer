@@ -12,3 +12,7 @@ Generates only top-level differences and does not recurse.
 Originally presented in a [StackoverFlow answer]
 (http://stackoverflow.com/questions/1165352/fast-comparison-between-two-python-dictionary/1165552#1165552).
 
+License
+=======
+
+DictDiffer is licensed as MIT code according to the LICENSE file.
