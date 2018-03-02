@@ -39,5 +39,6 @@ class DictDiffer(object):
 
     def new_or_changed(self):
         """ Find keys that are new or changed """
-        return set(k for k, v in self.current_dict.items()
-                   if k not in self.past_keys or v != self.past_dict[k])
+        # return set(k for k, v in self.current_dict.items()
+        #           if k not in self.past_keys or v != self.past_dict[k])
+        return self.added().union(self.changed())
